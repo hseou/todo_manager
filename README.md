@@ -38,14 +38,14 @@ from todo_package import Task, RecurringTask
 from todo_package.utils import save_tasks, load_tasks, filter_by_priority
 
 # 할 일 생성
-t1 = Task("파이썬 공부", "2025-07-01", "높음", ["학교"])
-t2 = Task("방 청소", "2025-07-02", "낮음")
-t3 = RecurringTask("매일 운동", "2025-07-01", "보통", 1)
+t1 = Task("파이썬 과제", "2026-06-22", "높음", ["학교"])
+t2 = Task("방 청소", "2026-06-22", "낮음")
+t3 = RecurringTask("매일 운동", "2026-06-22", "보통", 1)
 
 # 완료 처리
 t1.complete()
 print(t1.display())
-# ✅ [높음] 파이썬 공부 (마감: 2025-07-01)
+# ✅ [높음] 파이썬 과제 (마감: 2026-06-22)
 
 # 우선순위 필터링
 high = filter_by_priority([t1, t2, t3], "높음")
@@ -54,7 +54,7 @@ print(len(high))  # 1
 # JSON 저장 및 불러오기
 save_tasks([t1, t2, t3], "tasks.json")
 loaded = load_tasks("tasks.json")
-print(loaded[0].title)  # 파이썬 공부
+print(loaded[0].title)  # 파이썬 과제
 ```
 
 ---
