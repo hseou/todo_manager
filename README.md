@@ -88,7 +88,7 @@ print(loaded[0].title)  # 파이썬 공부
 
 ### 불러오기
 
-| python 파일명.py |
+python 파일명.py
 
 ---
 
