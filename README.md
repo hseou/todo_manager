@@ -31,9 +31,9 @@ pip install .
 
 ---
 
-## 3. 빠른 시작
+## 3. 실행 예시
 
-```python
+```python 파일 생성 후 아래 코드 붙여넣기
 from todo_package import Task, RecurringTask
 from todo_package.utils import save_tasks, load_tasks, filter_by_priority
 
@@ -85,6 +85,10 @@ print(loaded[0].title)  # 파이썬 공부
 | `save_tasks(tasks, filename)` | JSON 파일로 저장 |
 | `load_tasks(filename)` | JSON 파일에서 불러오기 |
 | `filter_by_priority(tasks, priority)` | 우선순위로 필터링 |
+
+### 불러오기
+
+| python 파일명.py |
 
 ---
 
